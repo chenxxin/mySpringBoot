@@ -1,0 +1,5 @@
+1. SpringBoot 集成 Spring Data Jpa
+    pom.xml 添加 spring-boot-starter-data-jpa 和 mysql-connector-java 依赖
+    application.properties 添加 jpa 和 mysql 相关配置
+    注意：与数据表对应的实体类，应添加 @Entity 注解，否则会抛出如下异常
+    java.lang.IllegalArgumentException: Not an managed type: class com.xin.entity.User
